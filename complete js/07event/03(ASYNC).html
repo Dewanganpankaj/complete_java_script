@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello ji mai hu pankaj</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // basic function in js 
+    const val = function(){
+        console.log("pankaj")
+    }
+    const change = function()
+    {
+        document.querySelector('h1')
+        .innerHTML = "best js series";
+    }
+    //setTimeout(change,2000)
+    setTimeout(val,2000)//2 sec time for waiting
+
+    // if i want to remove the set timeout what will i do 
+    // use the clearTimeout function 
+    // this is also required the reference phase
+    
+    // basic this is going
+    const node = setTimeout(change,2000) ;
+    // clearTimeout(node)
+
+    // but if we want to apply in a any event 
+    document.querySelector('#stop').addEventListener
+    ('click',function()
+    {
+        clearTimeout(node)
+        console.log("stopped")
+    })
+
+</script>
+</html>

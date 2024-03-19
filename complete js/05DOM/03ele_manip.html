@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai or code</title>
+</head>
+<body style="background-color: #212121; color :#fff">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // using the function 
+    function addlan(langname)
+    {
+        const li = document.createElement("li")
+        // inner html ma  i pura dom tree travese hota hai 
+        li.innerHTML = `${langname}` ;
+        // attached krna hai language model mai 
+        document.querySelector('.language').appendChild(li);
+    }
+    addlan("python");
+    addlan("JAVA");
+    //optimized an element 
+
+    function addlan1(langname)
+    {
+        const li = document.createElement("li")
+        // node creation logic is used 
+        const addText = document.createTextNode(langname)
+        li.appendChild(addText);
+        document.querySelector('.language').appendChild(li)
+    }
+    addlan1('golang');
+
+    //want to edit an item in list 
+
+    const second = document.querySelector("li:nth-child(2)")
+    //second.innerHTML ="MODI";
+    const newli = document.createElement('li');
+    newli.textContent = "MOJI";
+    second.replaceWith(newli) ;
+
+    // prefrom the second language updation technique 
+    //jise replace krna hai 
+    let score = document.querySelector("li:nth-child(1)");
+    // jisse replace krna hai create and repalce
+    // first we create an element 
+
+    const val = document.createElement('li');
+    val.textContent = "C++ language" ;
+    score.replaceWith(val);
+
+
+    // remove the value :-
+    const lastLAng = document.querySelector('li:last-child')
+    lastLAng.remove() ;
+
+
+
+</script>
+
+</html>

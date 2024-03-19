@@ -1,0 +1,21 @@
+some method of selecting the query 
+
+(.) =>this operator used to select By the
+id in style sheet 
+
+(#) => this is used for the select By className
+
+class select krne ke liye query selector mai . lagate hai 
+
+query selectorAll return node type list 
+which is different from the array but some operation is same 
+method is mylist[0].style.color ="green"
+
+query.selector('id') =>
+this method we are select particular thing as per their id
+
+when we use getElementByClassName than HTML collection is to 
+be return and here forEach command is not working properly
+so first we convert the html collection to array than use it
+
+Array.from() =>used to convert the 

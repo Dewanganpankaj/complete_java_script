@@ -1,0 +1,32 @@
+#blue1
+{
+    border-radius: 5px;
+    background-color: skyblue;
+    cursor: pointer;
+}
+.key
+{
+  border: 1px solid black;
+  background-color: aqua;
+  color : darkblue;
+  border-radius: 10px; 
+  padding : 3px
+}
+#red1
+{
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+}
+#yellow1
+{
+    border-radius: 5px;
+    background-color: yellow;
+    cursor: pointer;
+}
+#pink1
+{
+    border-radius: 5px;
+    background-color: pink;
+    cursor: pointer;
+}

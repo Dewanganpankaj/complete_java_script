@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai or code</title>
+</head>
+<body style="background-color : #212121; color :#fff">
+    
+</body>
+<script>
+    // create an element in div 
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1) 
+    div.setAttribute("title" ,"generated title")
+    div.style.backgroundColor = "skyblue"
+    div.style.padding = "12px";
+    // innerHTml overright the value to over come this we directly createTextNode
+    //div.innerHTML = "chai or code"
+    const addText =  document.createTextNode("pankaj is here")
+    div.appendChild(addText);
+    
+    // but not show in a page 
+    //finally we append in the main page 
+    document.body.appendChild(div);
+
+
+</script>
+</html>
